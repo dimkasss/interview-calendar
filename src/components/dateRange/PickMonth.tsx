@@ -10,7 +10,6 @@ const ContainerSpaceBetween = styled.div`
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
-    font-size: 1.3rem;
     @media (min-width: 740px) {
       padding: 0.5rem;
     }
@@ -18,6 +17,9 @@ const ContainerSpaceBetween = styled.div`
 
   const ClickableImg = styled.img`
     cursor: pointer;
+    @media (max-height: 740px) {
+      width: 15px;
+    }
   `
 
 const PickYear: React.FC = () => {
@@ -27,9 +29,9 @@ const PickYear: React.FC = () => {
 
   return ( 
     <ContainerSpaceBetween>
-      <ClickableImg onClick={() => dispatch(decreaseCurrentWeek())} src={BRACKET_LEFT_URL} alt='brackets' width='25px'></ClickableImg>
+      <ClickableImg onClick={() => dispatch(decreaseCurrentWeek())} src={BRACKET_LEFT_URL} alt='brackets' width='20px'></ClickableImg>
       <div>{getMonthName(currentWeek[0].month)} {currentWeek[0].year}</div>
-      <ClickableImg onClick={() => dispatch(increaseCurrentWeek())} src={BRACKET_RIGHT_URL} alt='brackets' width='25px'></ClickableImg>
+      <ClickableImg onClick={() => dispatch(increaseCurrentWeek())} src={BRACKET_RIGHT_URL} alt='brackets' width='20px'></ClickableImg>
     </ContainerSpaceBetween>
    );
 }

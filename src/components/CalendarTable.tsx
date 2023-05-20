@@ -9,7 +9,7 @@ import { getDaysOfWeek } from "../utils/date-utils";
 const Table = styled.div`
   overflow: overlay;
   cursor: pointer;
-  height: 67vh;
+  height: 57vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

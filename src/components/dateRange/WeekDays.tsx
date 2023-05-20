@@ -16,9 +16,8 @@ const CustomSpan = styled.span<DayCellProps>`
   border: ${(props) => (props.highlighted ? "1px solid red" : "")};
   border-radius: ${(props) => (props.highlighted ? "100%" : "")};
   text-align: center;
-  font-size: 1.3rem;
   padding: 0.4rem;
-  margin: auto;
+  margin: 0 auto;
   @media (max-width: 308px) {
     padding: 0;
     margin: 0;
