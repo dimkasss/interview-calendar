@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@200;300;500;700;900&display=swap');
+
+:root {
+  --grey: #cccccc;
+  --dark-grey: #999999;
+  --warm-grey: #F6F6F6;
+  --light-blue: #EBECFF;
+  --blue: #B3B7FF;
+  --red: #FF3131;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  @media (max-width: 308px) {
+    font-size: 1rem !important;
+  }
+}
